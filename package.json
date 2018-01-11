@@ -2,6 +2,10 @@
   "name": "ghadyaal",
   "version": "0.1.0",
   "description": "art clock based on @paulrickard's 8-bit line numerals",
+  "repository"  : { 
+    "type" : "git",
+    "url" : "https://github.com/isoughtajam/ghadyaal"
+  },
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
