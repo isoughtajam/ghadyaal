@@ -1,10 +1,13 @@
 var path = require('path');
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+    libraryTarget: 'commonjs2'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css']
   },
   module: {
     rules: [
@@ -16,6 +19,11 @@ module.exports = {
           loader: 'babel-loader',
           options: {},
         }
+      },
+      {
+        test: /\.jsx?/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
       },
       {
         test: /.css$/,
@@ -33,6 +41,6 @@ module.exports = {
     ]
   },
   externals: {
-    'react': 'commonjs react' // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
+    'react': 'commonjs react'
   }
 };

@@ -2,9 +2,9 @@
   "name": "ghadyaal",
   "version": "0.1.0",
   "description": "art clock based on @paulrickard's 8-bit line numerals",
-  "repository"  : { 
-    "type" : "git",
-    "url" : "https://github.com/isoughtajam/ghadyaal"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isoughtajam/ghadyaal"
   },
   "main": "build/index.js",
   "scripts": {
@@ -30,6 +30,7 @@
   "dependencies": {
     "css-loader": "^0.28.8",
     "file-loader": "^1.1.6",
+    "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -44,7 +45,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
-    "datejs": "^1.0.0-rc3",
     "eslint-plugin-class-property": "^1.1.0"
   }
 }

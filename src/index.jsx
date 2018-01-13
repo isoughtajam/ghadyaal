@@ -68,7 +68,7 @@ export default class Ghadyaal extends React.Component {
     }
 
     return coordinates.map((coordinate) => 
-      <line className="lines"
+      <line className="line"
         key={this.state.now + "_" + Math.random().toString()}
         x1={coordinate[0].toString()}
         y1={coordinate[1].toString()}
@@ -123,6 +123,6 @@ export default class Ghadyaal extends React.Component {
 };
 
 Ghadyaal.defaultProps = {
-  numeralSize: 60,
-  baseStrokeWidth: 6
+  numeralSize: 30,
+  baseStrokeWidth: 4
 };
