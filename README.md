@@ -3,6 +3,11 @@ React component art clock based on [@paulrickards](https://twitter.com/paulricka
 
 [Example](https://media.giphy.com/media/l0HU5yvMwdJ2OsQ1O/giphy.gif)
 
+## Install
+```
+npm install ghadyaal
+```
+
 ## Usage
 ```
 <Ghadyaal
