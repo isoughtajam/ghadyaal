@@ -16,7 +16,7 @@ or simply:
 <Ghadyaal />
 ```
 
-30 and 4 are the default values for `numeralSize` and `baseStrokeWidth`.
+30px and 4px are the default values for `numeralSize` and `baseStrokeWidth`.
 
 ## Relevant DOM Elements
 `id=timers` [Container for the numerals]
