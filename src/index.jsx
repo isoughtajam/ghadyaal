@@ -13,9 +13,15 @@ export default class Ghadyaal extends React.Component {
    * Increments time as the component's state
    */
   tick() {
-    this.setState({
-      now: this.state.now.add(1, 'seconds')
-    });
+    if (Math.abs(this.state.now.seconds() - moment().seconds()) >= 2) {
+      this.setState({
+        now: moment()
+      })
+    } else {
+      this.setState({
+        now: this.state.now.add(1, 'seconds')
+      });
+    }
   }
 
   /**
