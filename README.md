@@ -11,9 +11,16 @@ React component art clock based on [@paulrickards](https://twitter.com/paulricka
 />
 ```
 
-These are the default values for `numeralSize` and `baseStrokeWidth`.
+or simply:
+```
+<Ghadyaal />
+```
+
+30 and 4 are the default values for `numeralSize` and `baseStrokeWidth`.
 
 ## Relevant DOM Elements
-id=timers [Container for the numerals]
-class=timer
-class=line
+`id=timers` [Container for the numerals]
+
+`class=timer`
+
+`class=line`
