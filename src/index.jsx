@@ -69,10 +69,6 @@ export default class Ghadyaal extends React.Component {
    * Create line tags for an array of coordinates
    */
   createLines(coordinates) {
-    var lineStyle = {
-      stroke: "black"
-    }
-
     return coordinates.map((coordinate) => 
       <line className="line"
         key={this.state.now + "_" + Math.random().toString()}
@@ -82,7 +78,7 @@ export default class Ghadyaal extends React.Component {
         y2={coordinate[3].toString()}
         style={{
           strokeWidth: coordinate[4] * this.props.baseStrokeWidth,
-          stroke: "black"
+          stroke: this.props.strokeColor
         }}
       />
     )
@@ -97,7 +93,7 @@ export default class Ghadyaal extends React.Component {
       this.getCoordinates(this.state.now.hours()));
 
     var timersStyle = {
-      backgroundColor: "white",
+      backgroundColor: this.props.backgroundColor,
       width: this.props.numeralSize * 3 + 30
     }
     var timerStyle = {
@@ -130,5 +126,7 @@ export default class Ghadyaal extends React.Component {
 
 Ghadyaal.defaultProps = {
   numeralSize: 30,
-  baseStrokeWidth: 4
+  baseStrokeWidth: 4,
+  backgroundColor: "white",
+  strokeColor: "black"
 };

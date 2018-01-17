@@ -10,9 +10,11 @@ npm install ghadyaal
 
 ## Usage
 ```
-<Ghadyaal
-  numeralSize: 30
-  baseStrokeWidth: 4
+<Ghadyaal // these are the default values
+  numeralSize={30}
+  baseStrokeWidth={4}
+  backgroundColor="#fff"
+  strokeColor="#000"
 />
 ```
 
@@ -20,8 +22,6 @@ or simply:
 ```
 <Ghadyaal />
 ```
-
-30px and 4px are the default values for `numeralSize` and `baseStrokeWidth`.
 
 ## Relevant DOM Elements
 `id=timers` [Container for the numerals]
