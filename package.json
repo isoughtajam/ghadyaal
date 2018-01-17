@@ -1,6 +1,6 @@
 {
   "name": "ghadyaal",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "art clock based on @paulrickard's 8-bit line numerals",
   "repository": {
     "type": "git",
