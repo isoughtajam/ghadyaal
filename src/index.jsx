@@ -94,7 +94,8 @@ export default class Ghadyaal extends React.Component {
 
     var timersStyle = {
       backgroundColor: this.props.backgroundColor,
-      width: this.props.numeralSize * 3 + 30
+      width: this.props.numeralSize * 3 + 30,
+      opacity: this.props.opacity
     }
     var timerStyle = {
       margin: 5,
@@ -128,5 +129,6 @@ Ghadyaal.defaultProps = {
   numeralSize: 30,
   baseStrokeWidth: 4,
   backgroundColor: "white",
-  strokeColor: "black"
+  strokeColor: "black",
+  opacity: 1
 };
