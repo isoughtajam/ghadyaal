@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 const moment = require('moment');
 
 export default class Ghadyaal extends React.Component {
